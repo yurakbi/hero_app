@@ -11,7 +11,7 @@ import Spinner from '../spinner/Spinner';
 // Усложненная задача:
 // Удаление идет и с json файла при помощи метода DELETE
 
-const HeroesList = () => {
+const HeroesList = ({onDelete}) => {
     const {heroes, heroesLoadingStatus} = useSelector(state => state);
     const dispatch = useDispatch();
     const {request} = useHttp();
@@ -36,12 +36,11 @@ const HeroesList = () => {
             return <h5 className="text-center mt-5">Героев пока нет</h5>
         }
 
-        return arr.map(({id, ...props, onDelete}) => {
+        return arr.map(({id,  ...props }) => {
             return <HeroesListItem 
                 key={id} 
-                onDelete={ () => onDelete(id)}
-
-                {...props}/>
+                {...props}
+                onDelete={ () => onDelete(id)}/>
         })
     }
 
