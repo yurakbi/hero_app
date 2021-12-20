@@ -31,9 +31,6 @@ const HeroesList = ({onDelete}) => {
         return <h5 className="text-center mt-5">Ошибка загрузки</h5>
     }
 
-    const deletItem = (id) => {
-        
-    }
 
     const renderHeroesList = (arr) => {
         if (arr.length === 0) {
