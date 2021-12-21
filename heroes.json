@@ -1,23 +1,37 @@
 {
   "heroes": [
     {
-      "id": "74847e32-4f29-4d60-bbc1-d835180927bd",
-      "name": "Брюки  кюлоты",
-      "description": " hgvhgb",
-      "element": ""
-    },
-    {
-      "id": "374e0ff2-b602-4b9f-a135-dc104434970e",
-      "name": "Юра",
-      "description": "ascasca",
-      "element": ""
+      "id": "c326e292-c9eb-44f1-9588-688e86128749",
+      "name": "Ірина",
+      "description": "wFADWf",
+      "element": "wind"
     }
   ],
   "filters": [
-    "all",
-    "fire",
-    "water",
-    "wind",
-    "earth"
+    {
+      "name": "all",
+      "label": "Все",
+      "className": "btn-outline-dark"
+    },
+    {
+      "name": "fire",
+      "label": "Огонь",
+      "className": "btn-danger"
+    },
+    {
+      "name": "water",
+      "label": "Вода",
+      "className": "btn-primary"
+    },
+    {
+      "name": "wind",
+      "label": "Ветер",
+      "className": "btn-success"
+    },
+    {
+      "name": "earth",
+      "label": "Земля",
+      "className": "btn-secondary"
+    }
   ]
 }

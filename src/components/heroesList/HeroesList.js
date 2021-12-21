@@ -29,6 +29,7 @@ const HeroesList = () => {
         .then(data => console.log(data, "Deleted"))
         .then(dispatch(heroeDeleted(id)))
         .catch(err => console.log(err));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [request])
 
     if (heroesLoadingStatus === "loading") {
@@ -67,3 +68,4 @@ const HeroesList = () => {
         </TransitionGroup>
     )
 }
+export default HeroesList;
