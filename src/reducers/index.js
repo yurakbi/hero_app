@@ -38,6 +38,16 @@ const reducer = (state = initialState, action) => {
                                     newHeroList :
                                     newHeroList.filter(item => item.element === state.activeFilter)
             }
+        case "HERO_CREATED":
+            // Формуємо новий масив
+            let newCreatedHeroList = [...state.heroes, action.payload];
+            return {
+                ...state,
+                heroes: newCreatedHeroList,
+                filteredHeroes: state.activeFilter === 'all' ?
+                newCreatedHeroList :
+                newCreatedHeroList.filter(item => item.element === state.activeFilter)
+            }
 
         default: return state
     }
