@@ -2,7 +2,7 @@ const initialState = {
     heroes: [],
     heroesLoadingStatus: 'idle',
     filters: [],
-    filtresLoadingStatus: 'idle',
+    filtersLoadingStatus: 'idle',
     activeFilter: 'all',
     filteredHeroes: []
 
@@ -29,23 +29,23 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 heroesLoadingStatus: 'error'
             }
-        case "FILTERS_FETCHING":
+        case 'FILTERS_FETCHING':
             return {
                 ...state,
                 heroesLoadingStatus: 'loading'
             }
-        case "FILTERS_FETCHED":
+        case 'FILTERS_FETCHED':
             return {
                 ...state,
                 filters: action.payload,
-                filtresLoadingStatus: 'idle'
+                filtersLoadingStatus: 'idle'
             }
-        case "FILTERS_FETCHED_ERROR":
+        case 'FILTERS_FETCHING_ERROR':
             return {
                 ...state,
-                filtresLoadingStatus: 'error'
+                filtersLoadingStatus: 'error'
             }
-        case "ACTIVE_FILTER_CHANGED":
+        case 'ACTIVE_FILTER_CHANGED':
             return {
                 ...state,
                 activeFilter: action.payload,
@@ -53,7 +53,7 @@ const reducer = (state = initialState, action) => {
                                 state.heroes :
                                 state.heroes.filter(item => item.element === action.payload)
             }
-        case "HERO_DELETED":
+        case 'HERO_DELETED':
             const newHeroList = state.heroes.filter(item => item.id !== action.payload);
             return {
                 ...state,
@@ -62,7 +62,7 @@ const reducer = (state = initialState, action) => {
                                     newHeroList :
                                     newHeroList.filter(item => item.element === state.activeFilter)
             }
-        case "HERO_CREATED":
+        case 'HERO_CREATED':
             // Формуємо новий масив
             let newCreatedHeroList = [...state.heroes, action.payload];
             return {

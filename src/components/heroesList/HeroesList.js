@@ -3,7 +3,7 @@ import { useEffect, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
-import { heroesFetching, heroesFetched, heroesFetchingError, heroeDeleted } from '../../actions';
+import { heroesFetching, heroesFetched, heroesFetchingError, heroDeleted } from '../../actions';
 import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
 // Усложненная задача:
@@ -27,7 +27,7 @@ const HeroesList = () => {
     const onDelete = useCallback ((id) => {
         request(`http://localhost:3001/heroes/${id}`, "DELETE")
         .then(data => console.log(data, "Deleted"))
-        .then(dispatch(heroeDeleted(id)))
+        .then(dispatch(heroDeleted(id)))
         .catch(err => console.log(err));
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [request])
