@@ -1,16 +1,28 @@
 {
   "heroes": [
     {
-      "id": "3079754b-68ed-466e-be90-42faff42dbbe",
-      "name": "wsafcdsa",
-      "description": "ascsdcssadcsdcd",
-      "element": "fire"
+      "id": "a56f4c42-2979-4754-9980-67d8e7c8065a",
+      "name": "xvdxzv",
+      "description": "sdvsdavdfs",
+      "element": "water"
     },
     {
-      "id": "407c2a8f-a3f4-4869-8a1d-112fbbf7c1a4",
-      "name": "wqdwedq",
-      "description": "sxvsdavc",
-      "element": "wind"
+      "id": "27163ce7-d302-41ae-adc2-b1c2d0244695",
+      "name": "Брюки  кюлоты",
+      "description": "acsadc",
+      "element": "water"
+    },
+    {
+      "id": "5f650867-7142-4603-b0b7-00381a0f112b",
+      "name": "Брюки  кюлоты",
+      "description": "asfccsadc",
+      "element": "earth"
+    },
+    {
+      "id": "41ed73f7-f5d2-4dcf-96fe-e0dae17d0ab7",
+      "name": "Юра",
+      "description": "asvsdvcsd",
+      "element": "fire"
     }
   ],
   "filters": [
