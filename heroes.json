@@ -1,28 +1,22 @@
 {
   "heroes": [
     {
-      "id": "a56f4c42-2979-4754-9980-67d8e7c8065a",
-      "name": "xvdxzv",
-      "description": "sdvsdavdfs",
-      "element": "water"
-    },
-    {
-      "id": "27163ce7-d302-41ae-adc2-b1c2d0244695",
-      "name": "Брюки  кюлоты",
-      "description": "acsadc",
-      "element": "water"
-    },
-    {
-      "id": "5f650867-7142-4603-b0b7-00381a0f112b",
-      "name": "Брюки  кюлоты",
-      "description": "asfccsadc",
-      "element": "earth"
-    },
-    {
-      "id": "41ed73f7-f5d2-4dcf-96fe-e0dae17d0ab7",
+      "id": "3b94a034-f94a-4cdd-844d-402ba6d5f46f",
       "name": "Юра",
-      "description": "asvsdvcsd",
+      "description": "asfcasc",
       "element": "fire"
+    },
+    {
+      "id": "22a88b26-77e2-489c-a474-0cada482e752",
+      "name": "Юрій",
+      "description": "xvdffgvsdz",
+      "element": "wind"
+    },
+    {
+      "id": "817a9907-f335-4d38-bbdf-2179b9411c9b",
+      "name": "Юра",
+      "description": "dsxgrsdv",
+      "element": "water"
     }
   ],
   "filters": [
