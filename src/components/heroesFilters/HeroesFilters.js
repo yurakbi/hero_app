@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import classNames from 'classnames';
 
-import {fetchFilters, activeFilterChanged} from '../../actions';
+import { filterChanged} from './filtersSlice';
+import {fetchFilters} from '../../actions';
 import Spinner from '../spinner/Spinner';
 // Задача для этого компонента:
 // Фильтры должны формироваться на основании загруженных данных
@@ -45,7 +46,7 @@ const HeroesFilters = () => {
                         key={name}
                         id={name}
                         className={btnClass}
-                        onClick={()=> dispatch(activeFilterChanged(name))}
+                        onClick={()=> dispatch(filterChanged(name))}
                         >{label}</button>
         });
     }
