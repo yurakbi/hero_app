@@ -1,10 +1,12 @@
 import {useHttp} from '../../hooks/http.hook';
 import { useEffect, useCallback } from 'react';
-import { createSelector } from 'reselect';
+import { createSelector } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
-import { fetchHeroes, heroDeleted } from '../../actions';
+import { heroDeleted, fetchHeroes, selectAll } from './heroesSlice';
+import { useGetHeroesQuery } from '../../api/apiSlice';
+
 import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from '../spinner/Spinner';
 // Усложненная задача:
@@ -13,7 +15,7 @@ import Spinner from '../spinner/Spinner';
 const HeroesList = (props) => { 
     const filteredHeroesSelector = createSelector(
         (state) => state.filters.activeFilter,
-        (state) => state.heroes.heroes,
+        selectAll,
         (filter, heroes) => {
             if (filter === 'all') {
                 console.log('render')
@@ -38,7 +40,7 @@ const HeroesList = (props) => {
         // eslint-disable-next-line
 
     useEffect(() => {
-        dispatch(fetchHeroes(request));
+        dispatch(fetchHeroes());
         // eslint-disable-next-line
     }, []);
 
