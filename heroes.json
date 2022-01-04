@@ -1,21 +1,15 @@
 {
   "heroes": [
     {
-      "id": "3b94a034-f94a-4cdd-844d-402ba6d5f46f",
-      "name": "Юра",
-      "description": "asfcasc",
-      "element": "fire"
-    },
-    {
       "id": "22a88b26-77e2-489c-a474-0cada482e752",
       "name": "Юрій",
       "description": "xvdffgvsdz",
       "element": "wind"
     },
     {
-      "id": "817a9907-f335-4d38-bbdf-2179b9411c9b",
-      "name": "Юра",
-      "description": "dsxgrsdv",
+      "id": "ef191fae-66ba-4721-a1fb-e3bae9c0b1c7",
+      "name": "Khaburskyi Yurii",
+      "description": "agfaegfaef",
       "element": "water"
     }
   ],
